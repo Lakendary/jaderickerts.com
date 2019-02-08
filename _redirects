@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://competent-varahamihira-217391.netlify.com/* http://www.jaderickerts.com/:splat 301!
