@@ -637,7 +637,7 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" action="POST" data-netlify="true">
+            <form name="contactForm" id="contactForm" method="POST">
       			<fieldset>
 
                   <div class="form-field">
@@ -652,9 +652,9 @@
                   <div class="form-field">
 	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
 				   </div>
-				   <div class="form-field">
+				   <!-- <div class="form-field">
 					<div data-netlify-recaptcha="true"></div>
-			  		</div>                      
+			  		</div>                       -->
                  <div class="form-field">
                      <button class="submitform">Submit</button>
                      <div id="submit-loader">
