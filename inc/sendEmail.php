@@ -44,25 +44,25 @@ if($_POST) {
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 
-   if (!$error) {
+   // if (!$error) {
 
-      ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+   //    ini_set("sendmail_from", $siteOwnersEmail); // for windows server
+   //    $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-		if ($mail) { echo "OK"; }
-      else { echo "Something went wrong. Please try again."; }
+	// 	if ($mail) { echo "OK"; }
+   //    else { echo "Something went wrong. Please try again."; }
 		
-	} # end if - no validation error
+	// } # end if - no validation error
 
-	else {
+	// else {
 
-		$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
-		$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
-		$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
+	// 	$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
+	// 	$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
+	// 	$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
 		
-		echo $response;
+	// 	echo $response;
 
-	} # end if - there was a validation error
+	// } # end if - there was a validation error
 
 }
 
