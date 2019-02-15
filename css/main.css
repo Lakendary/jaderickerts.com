@@ -578,6 +578,9 @@ select {
 	color: #252525;
 }
 
+#recaptcha {
+	margin-top: 2rem;
+}
 /* IE9 and below */
 .oldie .ss-custom-select::after {
 	display: none;
