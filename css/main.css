@@ -1340,7 +1340,7 @@ header .logo a {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #0b6e6c;
+	color: #00A86B;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1626,6 +1626,7 @@ header .logo a {
 #resume {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
+	background: #FFFFFF;
 }
 
 #resume .resume-header {
@@ -1793,7 +1794,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #portfolio {
-	background: #FFFFFF;
+	background: #ebebeb;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
@@ -2581,7 +2582,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #0b6e6c;
+	background: #00A86B;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
