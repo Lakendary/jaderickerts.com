@@ -24,6 +24,7 @@
  *  16. stats
  *  17. contact
  *  18. footer
+ *  19. feature icons
  *
  * =================================================================== 
  */
@@ -2602,5 +2603,4 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
-
 /*# sourceMappingURL=main.css.map */
