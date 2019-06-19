@@ -94,6 +94,17 @@ a:hover, a:focus, a:active {
 	color: #00A86B;
 	outline: 0;
 }
+/**
+ * links - support
+ * -------------------------------------------------------------------
+ */
+ #contact div.row.section-intro div.col-twelve p.lead a {
+	 color: #00A86B;
+ }
+
+ #contact div.row.section-intro div.col-twelve p.lead a:hover {
+	color: #000000;
+}
 
 /** 
  * ===================================================================
