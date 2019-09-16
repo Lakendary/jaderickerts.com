@@ -1,9 +1,4 @@
 /**
- * =================================================================== 
- *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
  *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
@@ -21,7 +16,7 @@
  *  13. portfolio
  *  14. call-to-action section
  *  15. services
- *  16. stats
+ *  16. statistics
  *  17. contact
  *  18. footer
  *  19. feature icons
@@ -537,7 +532,7 @@ select {
 	padding: 1.5rem 0;
 	border: 0;
 	outline: none;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	color: #313131;
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
@@ -906,7 +901,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /** 
- * Stats Tab
+ * Statistics Tab
  * ---------
  * markup:
  *
