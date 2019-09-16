@@ -1404,8 +1404,8 @@ header .logo a {
 }
 .intro-content .button::after {
 	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
+	content: "\f150";
+	font-family: "Font Awesome 5 Free";
 	font-size: 1.6rem;
 	line-height: inherit;
 	text-align: center;
