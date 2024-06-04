@@ -81,10 +81,11 @@
 
 				<nav id="main-nav-wrap">
 					<ul class="main-navigation">
-						<li><a href="https://jaderickerts.com" title="Home">Home</a></li>
+						<li class="current"><a href="https://jaderickerts.com" title="Home">Home</a></li>
 						<li><a class="smoothscroll" href="#styles" title="Introduction">Introduction</a></li>
 						<li><a class="smoothscroll" href="#features" title="Features">Features</a></li>
-						<li><a class="smoothscroll" href="#contact" title="Contact">Support</a></li>
+						<!--<li><a class="smoothscroll" href="#demo-videos" title="Demo-Videos">Demo Videos</a></li>-->
+						<li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div> <!-- /top-bar -->
@@ -105,7 +106,7 @@
 						<span>Data Analyst</span> 
 						<span>Software Developer</span> 
 					</p>
-					<a class="button stroke smoothscroll" href="#features" title="">Features</a>
+					<!-- <a class="button stroke smoothscroll" href="#features" title="">Features</a> -->
 				</div>
 			</div>
 		</div> <!-- /intro-content -->
@@ -123,116 +124,70 @@
 	================================================== -->
 	<section id="styles">
 		<div class="row">
-			<h1>PriceBook</h1>
-			<div class="col-six tab-full">
+			<h1>Personal Finance Power BI Report</h1>
+			<div class="col-twelve tab-full">
+
+					<iframe title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe>
+					
+
 				<p class="drop-cap">
-					PriceBook is a grocery price tracker for Windows desktop. Keep record of all your grocery purchases and measure the product's prices over time.
-					Manage grocery items in categories and product links (similar products with different colours or flavours) and compare like for like items in PriceBook.
+					The Personal Finance Power BI Report is a report for GnuCash, an open source accounting software for Windows and Linux. GnuCash uses a PostgreSql
+					database. Only the dashboard page is currently mobile friendly, but the other pages will be made mobile-friendly soon. The  Personal Finance Report
+					measures net-worth and cash flow on a monthly basis. 
 				</p>
-				<p>
-					Users can add bar codes and use a handheld scanner or a smart phone camera to call up products by their bar code when capturing invoices. PriceBook uses a 
-					SQLite database. Users with a little SQLite knowledge can write scripts to query the database and export data with 
-					<a href="https://sqlitebrowser.org/dl/">DB Browser for SQLite</a>.
-				</p>
-				
 			</div>
-			<div class="col-six tab-full">
-				<h3>Tech Used</h3>
+			<!-- <div class="col-six tab-full">
+				<h3>Requirements</h3>
 				<p>
 					<ul class="disc">
-						<li><a href="https://dotnet.microsoft.com/download/dotnet-framework/net472">.NET Framework 4.6.2</a></li>
-						<li><a href="https://github.com/StackExchange/Dapper">Dapper ORM</a> for data object mapping</li>
-						<li><a href="https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki">SQLite</a> for a database</li>
-						<li><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2017</a> as an IDE</li>
-						<li><a href="https://github.com/dotnet/winforms">Winforms</a> for UI design</li>
-						<li><a href="https://fluentvalidation.net/start">Fluent Validation</a> for data validation</li>
-						<li><a href="https://github.com/Squirrel/Squirrel.Windows">Squirrel</a> for installation and updating</li>
-						<li><a href="https://git-scm.com/downloads">Git</a> for version control</li>
-						<li><a href="https://trello.com">Trello</a> for project management</li>
+						<li>.NET Framework 4.6.2</li>
+						<li>Windows 7 or later</li>
 					</ul>
 				</p>
-			</div>
+			</div> -->
 		</div>
-		<div class="row">
-			<div class="col-six tab-full">
-				<p style="margin-bottom:1rem;"><a class="button button-primary full-width" href="https://www.jaderickerts.com/projects/PriceBook_v1.zip"><i class="fa fa-code"></i> Download</a></p>
-				<p style="margin-bottom:1rem;"><a class="button button-primary full-width" href="https://github.com/Lakendary/pricebook.git"><i class="fa fa-git-square"></i> Repository</a></p>
-			</div>
-			<div class="col-six tab-full">
-				<p style="margin-bottom:1rem;"><a class="button button-primary full-width" href="https://github.com/Lakendary/pricebook/wiki"><i class="fa fa-book"></i> Documentation</a></p>
-				<p><a class="button button-primary full-width" href="https://trello.com/b/rLF3w9Cf/price-book-application"><i class="fa fa-trello"></i> Trello Board</a></p>
-			</div>
-		</div>
-		<!-- Feature 01 -->
-		<section id="features">
-			<div class="row">
-				<h1>Features</h1>
+		<section id="pages">
+			<div id="pages" class="row">
+				<h1>Pages</h1>
 				<div class="col-six tab-full">
-					<p><img src="../images/projects/pricebook/product-maintenance.gif" alt="default-image"></p>
+					<p><img src="../images/projects/personal-finance-report/dashboard.png" alt="default-image"></p>
 				</div>
 				<div class="col-six tab-full">
-					<h3>Product and Product Link Management</h3>
+					<h3>Dashboard</h3>
 					<p>
-						In PriceBook you can group similar products, called Product Links, to easily manage and measure prices. For example, potato chips would be a product
-						link to group Simba, Willards and Lays potato chips. Now you can compare prices across brands (and other attributes) because you are comparing like for 
-						like items, only difference is usually flavour, color or size of packaging. At the end of the day potato chips is potato chips.
+						Shows all the main KPIs, including debt-to-income ratio and savings rate. It also shows a graph of the 
+						income allocation and it's targets, according to Ramit Sethi's book, "I'll Teach You To Be Rich". The Dashboard
+						also give a breakdown on the assets, with a toggle button to switch to liability allocation (showing the use of bookmnarks).
 					</p>
 				</div>
 			</div>
-			<!-- Feature 02 -->
 			<div class="row">
 				<div class="col-six tab-full">
-					<p><img src="../images/projects/pricebook/invoice-capturing.gif" alt="default-image"></p>
+					<p><img src="../images/projects/personal-finance-report/monthly-cashflow.png" alt="default-image"></p>
 				</div>
 				<div class="col-six tab-full">
-					<h3>Capture Invoices</h3>
+					<h3>Monthly Cash Flow</h3>
 					<p>
-						In order to save grocery prices, products are captured by invoice. The user can either scan the product bar code or just search through all the products
-						captured in the database. New products that do not exist in the database can be added while capturing new invoices. 
+						On this page the user can see categories by actual vs last month and actual vs budget, showing the use of field parameters. 
+						The bars are also color coded depending on whether both last month and budget is worst off or only one of the two measures. 
+						The user can also drill-through to the Subcategory Detail page by selecting a subcategory in the Top 5 by Subcategory bar chart. 
 					</p>
 				</div>
 			</div>
-			<!-- Feature 03 -->
 			<div class="row">
 				<div class="col-six tab-full">
-					<p><img src="../images/projects/pricebook/installing.gif" alt="default-image"></p>
+					<p><img src="../images/projects/personal-finance-report/subcategory-details.png" alt="default-image"></p>
 				</div>
 				<div class="col-six tab-full">
-					<h3>Easy Install and Update</h3>
+					<h3>Subcategory Detail</h3>
 					<p>
-						The installation file for PriceBook is very small (less than 10MB) and easy to install. Just double-click the setup.exe file and the application will install
-						and open up. A desktop short-cut will be created. And when a new version is released, it will do an asynchronous update in the background. 
+						Shows the deeper details of each transaction for that subcategory. The year and month slicers are synced across all 3 pages, so whatever
+						is selected on one page, it will pull through to all the pages, creating a seemless user experience. Finally there is a bar chart for the
+						actual expenditure over time, which ignores the year and month slicer selection. 
 					</p>
 				</div>
 			</div>
 		</section>
-		
-		<!-- <div id="demo-videos" class="row">
-			<h1>Demo Videos</h1>
-				<div class="col-six tab-full">
-					<div class="fluid-video-wrapper">
-						YouTube embedded code here
-					</div>
-					<h3>Video Name here</h3>
-					<p>
-						Video description here
-					</p>
-					<ul class="disc">
-						<li>Feature 1 link to place in the video</li>
-						<li>Feature 2 link to place in the video</li>
-						<li>Feature 3 link to place in the video</li>
-					</ul>
-				</div>
-				<div class="col-six tab-full">
-						<div class="fluid-video-wrapper">
-							YouTube embedded code here
-						</div>
-					<h3>Video Name here</h3>
-					<p>
-						Video description here
-					</p>
-				</div> 
-			</div>	-->	
 	</section>
 	<!--styles -->
 
@@ -245,11 +200,10 @@
 			<div class="col-twelve">
 
 				<h5>Support</h5>
-				<h1>Do you need help with Pricebook?</h1>
+				<h1>Do you want a copy of this report?</h1>
 
 				<p class="lead">
-					Did you find a bug or have an error to report. Please leave a message with the details. Alternatively, 
-					create a new issue on <a href="https://github.com/Lakendary/pricebook/issues">Github</a>.
+					Do you use GnuCash as well and want to use this report?
 				</p>
 
 			</div>
@@ -271,7 +225,7 @@
 							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
 						</div>
 						<div class="form-field">
-							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="PriceBook Support" readonly>
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="Personal Finance Power BI Report" readonly>
 						</div>
 						<div class="form-field">
 							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
@@ -305,8 +259,6 @@
 			</div> <!-- /col-twelve -->
 
 		</div> <!-- /contact-form -->
-
-		</div> <!-- /contact-info -->
 
 	</section> <!-- /contact -->
 
