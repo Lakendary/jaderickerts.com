@@ -35,6 +35,22 @@
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/vendor.css">
 	<style type="text/css" media="screen">
+		.iframe-desktop {
+            display: none;
+        }
+        .iframe-mobile {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .iframe-desktop {
+                display: block;
+            }
+        }
+        @media (max-width: 767px) {
+            .iframe-mobile {
+                display: block;
+            }
+        }
 		#styles {
 			background: white;
 			padding-top: 12rem;
@@ -126,25 +142,18 @@
 		<div class="row">
 			<h1>Personal Finance Power BI Report</h1>
 			<div class="col-twelve tab-full">
+					<!-- Desktop iframe -->
+					<iframe class="iframe-desktop" title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe>
 
-					<iframe title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe>
-					
-
+					<!-- Mobile iframe -->
+					<iframe class="iframe-mobile" title="Personal Finance Report" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9" frameborder="0" allowFullScreen="true"></iframe>
+		
 				<p class="drop-cap">
 					The Personal Finance Power BI Report is a report for GnuCash, an open source accounting software for Windows and Linux. GnuCash uses a PostgreSql
 					database. Only the dashboard page is currently mobile friendly, but the other pages will be made mobile-friendly soon. The  Personal Finance Report
 					measures net-worth and cash flow on a monthly basis. 
 				</p>
 			</div>
-			<!-- <div class="col-six tab-full">
-				<h3>Requirements</h3>
-				<p>
-					<ul class="disc">
-						<li>.NET Framework 4.6.2</li>
-						<li>Windows 7 or later</li>
-					</ul>
-				</p>
-			</div> -->
 		</div>
 		<section id="pages">
 			<div id="pages" class="row">
