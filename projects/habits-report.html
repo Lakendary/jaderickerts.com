@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<!--- basic page needs
+   ================================================== -->
+   	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147983800-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-147983800-1');
+	</script>
+
+	<!--- basic page needs
+		================================================== -->
+	<meta charset="utf-8">
+	<title>Jade Rickerts</title>
+	<meta name="description" content="Portfolio Website">
+	<meta name="author" content="Jade Rickerts">
+
+	<!-- mobile specific metas
+		================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+		================================================== -->
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/vendor.css">
+	<style type="text/css" media="screen">
+		.iframe-desktop {
+            display: none;
+        }
+        .iframe-mobile {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .iframe-desktop {
+                display: block;
+            }
+        }
+        @media (max-width: 767px) {
+            .iframe-mobile {
+                display: block;
+            }
+        }
+		#styles {
+			background: white;
+			padding-top: 12rem;
+			padding-bottom: 12rem;
+		}
+
+		#styles .row {
+			max-width: 1024px;
+		}
+
+		#styles .section-intro {
+			max-width: 800px;
+		}
+	</style>
+
+	<!-- script
+		================================================== -->
+	<script src="../js/modernizr.js"></script>
+	<script src="../js/pace.min.js"></script>
+
+	<!-- favicons
+		================================================== -->
+	<link rel="icon" type="image/png" href="../favicon.png">
+
+	<!-- font awesome
+	================================================== -->
+	<link rel="stylesheet" href="../css/font-awesome/css/all.min.css">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+	================================================== -->
+	<header>
+		<div class="row">
+
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+				<div class="logo">
+					<a href="../index.html">JADE</a>
+				</div>
+
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a href="https://jaderickerts.com" title="Home">Home</a></li>
+						<li><a class="smoothscroll" href="#styles" title="Introduction">Introduction</a></li>
+						<li><a class="smoothscroll" href="#features" title="Features">Features</a></li>
+						<!--<li><a class="smoothscroll" href="#demo-videos" title="Demo-Videos">Demo Videos</a></li>-->
+						<li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div> <!-- /top-bar -->
+		</div> <!-- /row -->
+	</header> <!-- /header -->
+
+	<!-- intro section
+	================================================== -->
+	<section id="intro">
+		<div class="intro-overlay"></div>
+		<div class="intro-content">
+			<div class="row">
+				<div class="col-twelve">
+					<h5>Hello, World.</h5>
+					<h1>I'm Jade.</h1>
+					<p class="intro-position">
+						<span>Executive Informantion Officer</span>
+						<span>Data Analyst</span> 
+						<span>Software Developer</span> 
+					</p>
+					<!-- <a class="button stroke smoothscroll" href="#features" title="">Features</a> -->
+				</div>
+			</div>
+		</div> <!-- /intro-content -->
+
+		<ul class="intro-social">
+			<li><a href="https://codepen.io/lknant/#"><i class="fab fa-codepen fa-lg"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/jade-rickerts/"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+			<li><a href="https://github.com/Lakendary"><i class="fab fa-github fa-lg"></i></a></li>
+			<li><a href="https://blog.jaderickerts.com"><i class="fas fa-blog fa-lg"></i></a></li>
+		</ul> <!-- /intro-social -->
+	</section> <!-- /intro -->
+
+
+	<!-- Introduction
+	================================================== -->
+	<section id="styles">
+		<div class="row">
+			<h1>Personal Finance Power BI Report</h1>
+			<div class="col-twelve tab-full">
+					<!-- Desktop iframe -->
+					<iframe class="iframe-desktop" title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe>
+
+					<!-- Mobile iframe -->
+					<iframe class="iframe-mobile" title="Personal Finance Report" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9" frameborder="0" allowFullScreen="true"></iframe>
+		
+				<p class="drop-cap">
+					The Personal Finance Power BI Report is a report for GnuCash, an open source accounting software for Windows and Linux. GnuCash uses a PostgreSql
+					database. The report is mobile friendly if you use the Power BI Mobile App. The  Personal Finance Report
+					measures net-worth and cash flow on a monthly basis. 
+				</p>
+			</div>
+		</div>
+		<section id="pages">
+			<div id="pages" class="row">
+				<h1>Pages</h1>
+				<div class="col-six tab-full">
+					<p><img src="../images/projects/personal-finance-report/dashboard.png" alt="default-image"></p>
+				</div>
+				<div class="col-six tab-full">
+					<h3>Dashboard</h3>
+					<p>
+						Shows all the main KPIs, including debt-to-income ratio and savings rate. It also shows a graph of the 
+						income allocation and it's targets, according to Ramit Sethi's book, "I'll Teach You To Be Rich". The Dashboard
+						also give a breakdown on the assets, with a toggle button to switch to liability allocation (showing the use of bookmnarks).
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-six tab-full">
+					<p><img src="../images/projects/personal-finance-report/monthly-cashflow.png" alt="default-image"></p>
+				</div>
+				<div class="col-six tab-full">
+					<h3>Monthly Cash Flow</h3>
+					<p>
+						On this page the user can see categories by actual vs last month and actual vs budget, showing the use of field parameters. 
+						The bars are also color coded depending on whether both last month and budget is worst off or only one of the two measures. 
+						The user can also drill-through to the Subcategory Detail page by selecting a subcategory in the Top 5 by Subcategory bar chart. 
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-six tab-full">
+					<p><img src="../images/projects/personal-finance-report/subcategory-details.png" alt="default-image"></p>
+				</div>
+				<div class="col-six tab-full">
+					<h3>Subcategory Detail</h3>
+					<p>
+						Shows the deeper details of each transaction for that subcategory. The year and month slicers are synced across all 3 pages, so whatever
+						is selected on one page, it will pull through to all the pages, creating a seemless user experience. Finally there is a bar chart for the
+						actual expenditure over time, which ignores the year and month slicer selection. 
+					</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!--styles -->
+
+
+	<!-- contact
+	================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Support</h5>
+				<h1>Do you want a copy of this report?</h1>
+
+				<p class="lead">
+					Do you use GnuCash as well and want to use this report?
+				</p>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row contact-form">
+
+			<div class="col-twelve">
+
+				<!-- form -->
+				<form name="contactForm" id="contactForm" method="post" netlify-honeypot="bot-field" data-netlify="true">
+					<fieldset>
+
+						<div class="form-field">
+							<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2"
+								required="">
+						</div>
+						<div class="form-field">
+							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+						</div>
+						<div class="form-field">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="Personal Finance Power BI Report" readonly>
+						</div>
+						<div class="form-field">
+							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+								required=""></textarea>
+						</div>
+						<div class="form-field" id="recaptcha">
+							<div data-netlify-recaptcha="true"></div>
+						</div> 
+						<div class="form-field">
+							<button class="submitform">Submit</button>
+							<div id="submit-loader">
+								<div class="text-loader">Sending...</div>
+								<div class="s-loader">
+									<div class="bounce1"></div>
+									<div class="bounce2"></div>
+									<div class="bounce3"></div>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+				</form> <!-- Form End -->
+
+				<!-- contact-warning -->
+				<div id="message-warning"></div>
+				<!-- contact-success -->
+				<div id="message-success">
+					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /contact-form -->
+
+	</section> <!-- /contact -->
+
+
+	<!-- footer
+	================================================== -->
+
+	<footer>
+		<div class="row">
+			<div class="col-six tab-full pull-right social">
+				<ul class="footer-social">        
+					<li><a href="https://codepen.io/lknant/#"><i class="fab fa-codepen fa-sm"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/jade-rickerts/"><i class="fab fa-linkedin-in fa-sm"></i></a></li>
+					<li><a href="https://github.com/Lakendary"><i class="fab fa-github fa-sm"></i></a></li>
+					<li><a href="https://blog.jaderickerts.com"><i class="fas fa-blog fa-sm"></i></a></li>
+				</ul> 
+			</div>
+
+			<div class="col-six tab-full">
+				<div class="copyright">
+					<span>© Copyright Jade Rickerts 2024.</span>         	
+				</div>	
+			</div>
+
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-caret-square-up"></i></a>
+			</div>
+		</div> <!-- /row -->
+	</footer>
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<!-- Java Script
+	================================================== -->
+	<script src="../js/jquery-2.1.3.min.js"></script>
+	<script src="../js/plugins.js"></script>
+	<script src="../js/main.js"></script>
+
+</body>
+
+</html>
