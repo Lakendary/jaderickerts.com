@@ -99,7 +99,7 @@
 					<ul class="main-navigation">
 						<li class="current"><a href="https://jaderickerts.com" title="Home">Home</a></li>
 						<li><a class="smoothscroll" href="#styles" title="Introduction">Introduction</a></li>
-						<li><a class="smoothscroll" href="#features" title="Features">Features</a></li>
+						<li><a class="smoothscroll" href="#pages" title="Features">Pages</a></li>
 						<!--<li><a class="smoothscroll" href="#demo-videos" title="Demo-Videos">Demo Videos</a></li>-->
 						<li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
 					</ul>
@@ -128,10 +128,8 @@
 		</div> <!-- /intro-content -->
 
 		<ul class="intro-social">
-			<li><a href="https://codepen.io/lknant/#"><i class="fab fa-codepen fa-lg"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/jade-rickerts/"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
 			<li><a href="https://github.com/Lakendary"><i class="fab fa-github fa-lg"></i></a></li>
-			<li><a href="https://blog.jaderickerts.com"><i class="fas fa-blog fa-lg"></i></a></li>
 		</ul> <!-- /intro-social -->
 	</section> <!-- /intro -->
 
@@ -140,18 +138,19 @@
 	================================================== -->
 	<section id="styles">
 		<div class="row">
-			<h1>Personal Finance Power BI Report</h1>
+			<h1>Habits Power BI Report</h1>
 			<div class="col-twelve tab-full">
 					<!-- Desktop iframe -->
-					<iframe class="iframe-desktop" title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe>
+					<!-- <iframe class="iframe-desktop" title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe> -->
 
 					<!-- Mobile iframe -->
-					<iframe class="iframe-mobile" title="Personal Finance Report" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9" frameborder="0" allowFullScreen="true"></iframe>
+					<!-- <iframe class="iframe-mobile" title="Personal Finance Report" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9" frameborder="0" allowFullScreen="true"></iframe> -->
 		
 				<p class="drop-cap">
-					The Personal Finance Power BI Report is a report for GnuCash, an open source accounting software for Windows and Linux. GnuCash uses a PostgreSql
-					database. The report is mobile friendly if you use the Power BI Mobile App. The  Personal Finance Report
-					measures net-worth and cash flow on a monthly basis. 
+					I've always been meticulous about tracking my habits, using Notion to log everything. 
+					Recently, I decided to visualize this data, so I turned to Power BI. 
+					I wrote a Python script to pull data from Notion into Power BI using Power Query and created another script to calculate my habit streaks. 
+					The result is a detailed, insightful report that keeps me on track and motivated.
 				</p>
 			</div>
 		</div>
@@ -159,40 +158,40 @@
 			<div id="pages" class="row">
 				<h1>Pages</h1>
 				<div class="col-six tab-full">
-					<p><img src="../images/projects/personal-finance-report/dashboard.png" alt="default-image"></p>
+					<p><img src="../images/projects/habits-report/Habits Report-Weekly-Review.jpg" alt="default-image"></p>
 				</div>
 				<div class="col-six tab-full">
-					<h3>Dashboard</h3>
+					<h3>Weekly Review: A Snapshot of Progress</h3>
 					<p>
-						Shows all the main KPIs, including debt-to-income ratio and savings rate. It also shows a graph of the 
-						income allocation and it's targets, according to Ramit Sethi's book, "I'll Teach You To Be Rich". The Dashboard
-						also give a breakdown on the assets, with a toggle button to switch to liability allocation (showing the use of bookmnarks).
+						The first page of my report is a weekly review that gives me a clear view of how I've performed each week. 
+						It features a bar chart showing how many times I completed each habit daily, plus a weekly efficiency gauge to see how close I am to my targets. 
+						My habit score, which tracks my progress over time, is also highlighted.
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-six tab-full">
-					<p><img src="../images/projects/personal-finance-report/monthly-cashflow.png" alt="default-image"></p>
+					<p><img src="../images/projects/habits-report/Habits Report-Monthly-Review.jpg" alt="default-image"></p>
 				</div>
 				<div class="col-six tab-full">
-					<h3>Monthly Cash Flow</h3>
+					<h3>Monthly Review: Categorizing and Analyzing Habits</h3>
 					<p>
-						On this page the user can see categories by actual vs last month and actual vs budget, showing the use of field parameters. 
-						The bars are also color coded depending on whether both last month and budget is worst off or only one of the two measures. 
-						The user can also drill-through to the Subcategory Detail page by selecting a subcategory in the Top 5 by Subcategory bar chart. 
+						The second page focuses on the monthly review, where habits are grouped into categories. 
+						A dynamic bar chart with field parameters lets me explore habits by different dimensions, such as time of day, effort level, and frequency. 
+						I’ve also added a rewarding system where I assign a monetary value to habits based on their difficulty and frequency, which keeps me motivated to stick with them.
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-six tab-full">
-					<p><img src="../images/projects/personal-finance-report/subcategory-details.png" alt="default-image"></p>
+					<p><img src="../images/projects/habits-report/Habits Report-Habit-Detail.jpg" alt="default-image"></p>
 				</div>
 				<div class="col-six tab-full">
-					<h3>Subcategory Detail</h3>
+					<h3>Habit Detail: Digging Deeper</h3>
 					<p>
-						Shows the deeper details of each transaction for that subcategory. The year and month slicers are synced across all 3 pages, so whatever
-						is selected on one page, it will pull through to all the pages, creating a seemless user experience. Finally there is a bar chart for the
-						actual expenditure over time, which ignores the year and month slicer selection. 
+						For those who want to dive deeper, the habit detail page is accessible through drill-throughs from the weekly or monthly review. 
+						This page offers a more detailed view, including streaks—both current and all-time best—and a calendar to visualize habit completion. 
+						It’s a fantastic way to celebrate wins and identify areas where I can improve.
 					</p>
 				</div>
 			</div>
@@ -212,7 +211,7 @@
 				<h1>Do you want a copy of this report?</h1>
 
 				<p class="lead">
-					Do you use GnuCash as well and want to use this report?
+					Do you track your habits in Notion? Want to use this report?
 				</p>
 
 			</div>
@@ -279,10 +278,8 @@
 		<div class="row">
 			<div class="col-six tab-full pull-right social">
 				<ul class="footer-social">        
-					<li><a href="https://codepen.io/lknant/#"><i class="fab fa-codepen fa-sm"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/jade-rickerts/"><i class="fab fa-linkedin-in fa-sm"></i></a></li>
 					<li><a href="https://github.com/Lakendary"><i class="fab fa-github fa-sm"></i></a></li>
-					<li><a href="https://blog.jaderickerts.com"><i class="fas fa-blog fa-sm"></i></a></li>
 				</ul> 
 			</div>
 
