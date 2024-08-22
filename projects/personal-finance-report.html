@@ -36,21 +36,29 @@
 	<link rel="stylesheet" href="../css/vendor.css">
 	<style type="text/css" media="screen">
 		.iframe-desktop {
-            display: none;
-        }
-        .iframe-mobile {
-            display: none;
-        }
-        @media (min-width: 768px) {
-            .iframe-desktop {
-                display: block;
-            }
-        }
-        @media (max-width: 767px) {
-            .iframe-mobile {
-                display: block;
-            }
-        }
+			display: none;
+		}
+
+		.message-mobile {
+			display: none;
+			font-size: 18px;
+			color: #ff0000; /* Red color for the message */
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		@media (min-width: 900px) {
+			.iframe-desktop {
+				display: block;
+			}
+		}
+
+		@media (max-width: 899px) {
+			.message-mobile {
+				display: block;
+			}
+		}
+
 		#styles {
 			background: white;
 			padding-top: 12rem;
@@ -128,10 +136,8 @@
 		</div> <!-- /intro-content -->
 
 		<ul class="intro-social">
-			<li><a href="https://codepen.io/lknant/#"><i class="fab fa-codepen fa-lg"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/jade-rickerts/"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
 			<li><a href="https://github.com/Lakendary"><i class="fab fa-github fa-lg"></i></a></li>
-			<li><a href="https://blog.jaderickerts.com"><i class="fas fa-blog fa-lg"></i></a></li>
 		</ul> <!-- /intro-social -->
 	</section> <!-- /intro -->
 
@@ -142,17 +148,20 @@
 		<div class="row">
 			<h1>Personal Finance Power BI Report</h1>
 			<div class="col-twelve tab-full">
-					<!-- Desktop iframe -->
-					<iframe class="iframe-desktop" title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9&pageName=ReportSection73b2078620dc0705c504" frameborder="0" allowFullScreen="true"></iframe>
-
-					<!-- Mobile iframe -->
-					<iframe class="iframe-mobile" title="Personal Finance Report" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9" frameborder="0" allowFullScreen="true"></iframe>
-		
 				<p class="drop-cap">
 					The Personal Finance Power BI Report is a report for GnuCash, an open source accounting software for Windows and Linux. GnuCash uses a PostgreSql
 					database. The report is mobile friendly if you use the Power BI Mobile App. The  Personal Finance Report
 					measures net-worth and cash flow on a monthly basis. 
 				</p>
+				<br>
+				<div class="iframe-desktop">
+					<!-- Your embedded Power BI report iframe here -->
+					<iframe title="Personal Finance Report" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiMjVlY2JkYTktZDZiYS00OWY3LThlMGQtNzFlOTRhMzg1NmRkIiwidCI6IjNlNmUxODZjLTI5YzYtNGMwNi1iZGVmLWE4ZTcwNzM3ZTY2YyJ9" frameborder="0" allowFullScreen="true"></iframe>
+				</div>
+				<div class="message-mobile">
+					The embedded report is only available on screens wider than 900 pixels.
+				</div>
+				<br>
 			</div>
 		</div>
 		<section id="pages">
@@ -237,7 +246,7 @@
 							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="Personal Finance Power BI Report" readonly>
 						</div>
 						<div class="form-field">
-							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"
+							<textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50"
 								required=""></textarea>
 						</div>
 						<div class="form-field" id="recaptcha">
@@ -279,10 +288,8 @@
 		<div class="row">
 			<div class="col-six tab-full pull-right social">
 				<ul class="footer-social">        
-					<li><a href="https://codepen.io/lknant/#"><i class="fab fa-codepen fa-sm"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/jade-rickerts/"><i class="fab fa-linkedin-in fa-sm"></i></a></li>
 					<li><a href="https://github.com/Lakendary"><i class="fab fa-github fa-sm"></i></a></li>
-					<li><a href="https://blog.jaderickerts.com"><i class="fas fa-blog fa-sm"></i></a></li>
 				</ul> 
 			</div>
 
